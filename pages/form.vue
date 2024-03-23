@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Title>Agenda - Cadastro de Contatos {{ contact.name }}</title>
+    <Meta name="description" :content="`Formulário de cadastro de contato ${contact.name}`"/>
+    <Meta property="twitter:title" :content="`Formulário de cadastro de contato ${contact.name}`"/>
     <form>
       <UIInput label="Nome" type="text" v-model="contact.name" />
       <UIInput label="E-Mail" type="email" v-model="contact.email" />

@@ -13,6 +13,16 @@
 <script setup>
 import { useRouter } from "vue-router";
 const router = useRouter();
+
+useHead({
+  title: "Agenda",
+  meta: [{ name: "description", content: "Agenda de contatos" },
+  { name: "twitter:title", content: "Agenda.com" },
+  {property: "og:title", content: "Agenda.com"}
+
+],
+});
+
 const addContact = () => {
   router.push("/form");
 };
